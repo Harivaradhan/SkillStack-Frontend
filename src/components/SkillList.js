@@ -10,7 +10,8 @@ function SkillList() {
 
   const fetchSkills = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/SkillStack/getAllSkills");
+     const res = await axios.get("https://skillstacktracker.onrender.com/SkillStack/getAllSkills");
+
       setSkills(res.data);
     } catch (err) {
       console.error(err);
@@ -25,7 +26,7 @@ function SkillList() {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this skill?")) {
       try {
-        await axios.delete(`http://localhost:8080/SkillStack/deleteServlet?id=${id}`);
+        await axios.delete(`https://skillstacktracker.onrender.com/SkillStack/deleteServlet?id=${id}`);
         alert("Skill deleted successfully!");
         fetchSkills();
       } catch (err) {
@@ -43,7 +44,7 @@ function SkillList() {
   // 💾 SAVE updated skill
   const handleUpdate = async () => {
     try {
-      await axios.put("http://localhost:8080/SkillStack/UpdateServlet", editingSkill);
+      await axios.put("https://skillstacktracker.onrender.com/SkillStack/UpdateServlet", editingSkill);
       alert("Skill updated successfully!");
       setEditingSkill(null);
       fetchSkills();
