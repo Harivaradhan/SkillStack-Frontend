@@ -20,7 +20,7 @@ function AddSkillForm({ onClose, onSkillAdded }) {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8080/SkillStack/addSkill", skill);
+      const res = await axios.post("https://skillstacktracker.onrender.com/SkillStack/addSkill", skill);
       alert(res.data.message);
       onSkillAdded();
       onClose();
