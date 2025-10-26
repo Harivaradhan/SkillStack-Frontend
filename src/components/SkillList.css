@@ -1,0 +1,90 @@
+/* Container for the table */
+.table-container {
+  width: 90%;          /* Fixed width relative to page */
+  max-width: 1200px;   /* Maximum width */
+  margin: 20px auto;   /* Centered with top-bottom margin */
+  overflow-x: auto;    /* Horizontal scroll if table too wide */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Header styling */
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  position: sticky; /* Header stays fixed when scrolling */
+  top: 0;
+}
+
+/* Rows styling */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect on rows */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Buttons inside table */
+button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Buttons styling */
+.edit-btn {
+  background-color: #4CAF50; /* green */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336; /* red */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #da190b;
+}
+
+
+/* Add Skill button */
+.add-skill-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #FF9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-skill-btn:hover {
+  background-color: #e68900;
+}

@@ -1,0 +1,65 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #fcfcfc;
+  min-height: 100vh;
+}
+
+/* App container */
+.App {
+  background-color: #e9fbe9;
+  padding: 20px 40px;
+  border-radius: 0; /* remove rounded edges to fill screen */
+  box-shadow: none; /* remove shadow */
+  width: 100%;      /* full width */
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   text-align: center;
+}
+
+/* Heading */
+.App h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+  width: 90%; /* table fills most of card width */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Button styling */
+button {
+  padding: 8px 12px;
+  margin: 4px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
